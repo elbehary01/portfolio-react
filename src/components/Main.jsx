@@ -2,6 +2,8 @@ import React from 'react';
 import myImage from './me-blackaNwhite.png';
 import hacker from './hacker-mind.svg';
 import Services from './Services';
+import Projects from './Projects';
+import Contact from './Contact';
 
 export default function Main() {
   return (
@@ -94,6 +96,8 @@ export default function Main() {
         </div>
       </section>
       <Services />
+      <Projects />
+      <Contact />
     </main>
   );
 }

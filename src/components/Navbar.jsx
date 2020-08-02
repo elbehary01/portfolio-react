@@ -10,7 +10,7 @@ const Navigation = () => {
       >
         <div className='container'>
           <a id='header-signature' href='https://elbehary.com/#home'>
-            A<span className='dot'></span> E<span className='dot'></span>
+            A.E.
           </a>
           <button
             className='navbar-toggler'
