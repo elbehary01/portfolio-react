@@ -21,43 +21,24 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className='row'>
-          <div className='col-12 col-md-6'>
+        <div className='d-flex justify-content-center'>
+          <div className='col-12 col-md-8'>
             <div className='contact-card'>
-              <table className='table contact-details'>
-                <tbody>
-                  <tr>
-                    <td colSpan='2'>
-                      <p className='pb-1'>
-                        <strong>Get in Touch</strong>
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i className='icon icon-home' aria-hidden='true'></i>{' '}
-                    </td>
-                    <td>+49 159 013 071 69 </td>
-                  </tr>
-                  <tr>
-                    <td colSpan='2'>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i className='icon icon-linkedin' aria-hidden='true'></i>{' '}
-                    </td>
-                    <td>
-                      <a
-                        href='https://www.linkedin.com/in/ahmed-elbehary/'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                      >
-                        /in/ahmed-elbehary/{' '}
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div className='row justify-content'>
+                <div className='row col-12'>
+                  <strong>Get in Touch</strong>
+                  <i className='icon icon-home' aria-hidden='true'></i>{' '}
+                  <a
+                    href='https://www.linkedin.com/in/ahmed-elbehary/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <i className='icon icon-linkedin' aria-hidden='true'></i>{' '}
+                    /in/ahmed-elbehary/{' '}
+                  </a>
+                  <p>+49 159 013 071 69</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
