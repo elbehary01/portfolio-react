@@ -8,9 +8,8 @@ const Services = () => {
           <h2 className='text-center'>My Service</h2>
           <div className='row my-5 mb-md-6'>
             <div className='col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center'>
-              I'm offering the following services as a small business (§ 19
-              UStG) and I'm known for high quality standards as well as on-time
-              delivery.
+              aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+              imperdiet a, venenatis vitae, justo. Nullam dictum
             </div>
           </div>
           <div className='services row'>

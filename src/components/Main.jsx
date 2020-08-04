@@ -66,31 +66,24 @@ export default function Main() {
             <h2>About me</h2>
 
             <p>
-              I'm 31 years old, happy to be a professional web developer for the
-              last 16 of those years and had the chance to work in many
-              different projects and environments already.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
+              vel
             </p>
-
             <p>
-              In all those years I learned more than just programming and
-              languages. I learned how to grow my career, built great
-              development teams and lead people to success.
+              aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
             </p>
-
             <p>
-              I started teaching programming to kids, teenagers and adults in
-              2003 and had the chance to let it become my profession for 1 1/2
-              years in 2017. In 2019 I started to work as a developer again, but
-              I still love to do workshops and events for the Hacker School .
-            </p>
-
-            <p>
-              I've already used many different technologies, but building great
-              products doesn't rely on choices of the tech stack. I might use{' '}
-              Vue.js in one project and React in the next one, as a good
-              developer will always be able to learn new tools and choose the
-              right ones for different use cases. I use PHP the most, but I've
-              also done some Python in the past.
+              imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+              ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,
+              tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+              adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
+              luctus.
             </p>
           </div>
         </div>
