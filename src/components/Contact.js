@@ -9,9 +9,9 @@ const Contact = () => {
         <div className='row my-4'>
           <div className='col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center'>
             <p className='pt-0'>
-              If you've got any questions or you want to book me as a
-              freelancer, shoot me an email. I'm also available for social
-              engagement.
+              aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+              mollis pretium. Integer tincidunt.
             </p>
             <p>
               <a href='mailto:ahmedelbehary0@gmail.com?subject=Contact%20Form'>
