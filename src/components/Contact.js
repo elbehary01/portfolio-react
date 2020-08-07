@@ -26,19 +26,19 @@ const Contact = () => {
             <div className='contact-card card'>
               <div className='row justify-content'>
                 <div className='row col-12 card-body'>
-                  <strong className="card-title">Get in Touch</strong>
+                  <strong className="card-title title">Get in Touch</strong>
                   <div className="card-text">
                     
-                  <i className='icon icon-home' aria-hidden='true'></i>{' '}
+                    <i className='icon icon-linkedin' aria-hidden='true'></i>{' '}
                   <a
                     href='https://www.linkedin.com/in/ahmed-elbehary/'
                     target='_blank'
                     rel='noopener noreferrer'
                     >
-                    <i className='icon icon-linkedin' aria-hidden='true'></i>{' '}
                     /in/ahmed-elbehary/{' '}
                   </a>
-                  <p>+49 159 013 071 69</p>
+                  <i className='icon icon-home' aria-hidden='true'></i>{' '}
+                    <p className="telephone">+49 159 013 071 69</p>
                   </div>
                 </div>
               </div>

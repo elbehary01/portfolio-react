@@ -25,7 +25,7 @@ const Navigation = () => {
         variant='light'
       >
         <div className='container'>
-          <a id='header-signature' href='https://elbehary.com/#home'>
+          <a id='header-signature' href='https://elbehary.com'>
             A.E.
           </a>
           <button
