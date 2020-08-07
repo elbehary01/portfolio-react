@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 
 const Navigation = () => {
-  const [scrolling, setScrolling] = useState(false);
+  const [scrolling, setScrolling] = useState("");
   const [scrollTop, setScrollTop] = useState(0);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Navigation = () => {
     <>
       <nav
         className={`navbar navbar-expand-lg fixed-top navbar-light bg-light ${
-          scrollTop ? 'bg-scrolled' : ''
+          scrollTop ? 'bg-scrolled' : scrolling
         }`}
         bg='light'
         variant='light'
