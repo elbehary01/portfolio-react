@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+
 const Navigation = () => {
-  const [scrolling, setScrolling] = useState("");
+  const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
 
   useEffect(() => {
@@ -17,7 +18,9 @@ const Navigation = () => {
   return (
     <>
       <nav
-        className={`navbar navbar-expand-lg fixed-top navbar-light bg-light ${scrollTop ? "bg-scrolled" : ""}`}
+        className={`navbar navbar-expand-lg fixed-top navbar-light bg-light ${
+          scrollTop ? 'bg-scrolled' : ''
+        }`}
         bg='light'
         variant='light'
       >
@@ -43,10 +46,11 @@ const Navigation = () => {
                   Home
                 </a>
               </li>
-              <li className='nav-item'>
-                <a href='#about' className='nav-link'>
-                  About me
-                </a>
+              <li className='nav-item'>            
+                  <a href='#about' className='nav-link'>
+                    About me
+                  </a>
+                
               </li>
               <li className='nav-item'>
                 <a href='#services' className='nav-link'>
