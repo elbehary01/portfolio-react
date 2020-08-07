@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Navigation = () => {
+  const [scrolling, setScrolling] = useState("");
+  const [scrollTop, setScrollTop] = useState(0);
+
+  useEffect(() => {
+    const onScroll = e => {
+      setScrollTop(e.target.documentElement.scrollTop);
+      setScrolling(e.target.documentElement.scrollTop > scrollTop);
+    };
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollTop]);
+
   return (
     <>
       <nav
-        className={`navbar navbar-expand-lg fixed-top navbar-light bg-light`}
+        className={`navbar navbar-expand-lg fixed-top navbar-light bg-light ${scrollTop ? "bg-scrolled" : ""}`}
         bg='light'
         variant='light'
       >
