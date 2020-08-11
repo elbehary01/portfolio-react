@@ -4,44 +4,46 @@ const Projects = () => {
   return (
     <div id='experience' className='container py-5 py-md-6'>
       <section className='features'>
+        
         <div className='container text-center'>
-          <h2 className='text-center head-border-center'>Projects</h2>
+          <h2 className='text-center head-border-center mb-4 pb-4'>Projects</h2>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor.</p>
+        
+        </div>
 
-          <div className="container-fluid pt-6">
-            <div className="card-columns">
-              <div className="col-4 offset-7 col-sm-5 offset-sm-6 col-md-10 offset-md-1 pt-md-3 mb-md-4 thumbnail ">
+          <div className="container-fluid pt-5 mt-5">
+            <div className="row justify-content-around">
+              <div className="thumbnail col-12 col-sm-5 col-md-2 mb-5">
                   <a 
                     href='https://www.google.com'
                     target='_blank'
                     rel='noopener noreferrer'>
                 
-                  <img src="images/images.png" alt="LearnByEar" className="img-fluid " />
+                  <img src="images/images.png" alt="Projects" className="img-fluid" />
                   </a>
-                  <p className="pt-4 ml-4">project one</p>
+                  <p className="text-center pt-3">project one</p>
                 </div>
-              <div className="col-4 offset-7 col-sm-5 offset-sm-6 col-md-10 offset-md-1 pt-md-3 mb-md-4 thumbnail">
+              <div className="thumbnail col-12 col-sm-5 col-md-2 mb-5">
                   <a 
                     href='https://www.google.com'
                     target='_blank'
                     rel='noopener noreferrer'>
                 
-                  <img src="images/images.png" alt="LearnByEar" className="img-fluid" />
+                  <img src="images/images.png" alt="Projects" className="img-fluid" />
                   </a>
-                <p className="pt-4 ml-4">project two</p>
+                <p className="text-center pt-3">project two</p>
                 </div>
-              <div className="col-4 offset-7 col-sm-5 offset-sm-6 col-md-10 offset-md-1 pt-md-3 mb-md-4 thumbnail">
+              <div className="thumbnail col-12 col-sm-5 col-md-2 mb-5">
                   <a 
                     href='https://www.google.com'
                     target='_blank'
                     rel='noopener noreferrer'>
-                  <img src="images/images.png" alt="LearnByEar" className="img-fluid" />
+                  <img src="images/images.png" alt="Projects" className="img-fluid" />
                   </a>
-                  <p className="pt-4 ml-4">project three</p>
+                <p className="text-center pt-3">project three</p>
                 </div>
             </div>
-        </div>
         </div>
       </section>
     </div>

@@ -6563,8 +6563,8 @@ tr {
   padding-bottom: 0.25rem !important;
 }
 .thumbnail img {
-  border-radius: 50%;
-  min-width: 110%;
+  border-radius: 30%;
+  width: 100%;
   height: auto;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   filter: grayscale(100%);
@@ -6595,3 +6595,11 @@ tr {
 .telephone {
   position: relative;
 }
+/* @media (max-width: 576px) {
+  .thumbnail {
+    column-count: 1;
+    text-align: center;
+    min-width: 100%;
+    height: auto;
+  }
+} */
