@@ -21,30 +21,62 @@ const Contact = () => {
           </div>
         </div>
 
+
+
+
+
+
         <div className='d-flex justify-content-center'>
-          <div className='col-12 col-md-8'>
-            <div className='contact-card card'>
-              <div className='row justify-content'>
-                <div className='row col-12 card-body'>
-                  <strong className="card-title title">Get in Touch</strong>
-                  <div className="card-text">
-                    
-                    <i className='icon icon-linkedin' aria-hidden='true'></i>{' '}
+          <div className='col-md-4 col'>
+            <img className="float-right card-logo" src="/images/A.E..png" alt=""/> 
+              <div className='contact-card card'>
+              <h4 >Get in Touch</h4>
+
+                <div className='col-12 pl-5'>
+
+                 <div className="" >
+                      <i className='icon icon-linkedin' aria-hidden='true'></i> 
+                      <a
+                        href='https://www.linkedin.com/in/ahmed-elbehary/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        /in/ahmed-elbehary/{' '}
+                      </a>
+                   </div>
+
+                <div>
+                  <i className='icon icon-linkedin' aria-hidden='true'></i>
                   <a
                     href='https://www.linkedin.com/in/ahmed-elbehary/'
                     target='_blank'
                     rel='noopener noreferrer'
-                    >
+                  >
                     /in/ahmed-elbehary/{' '}
                   </a>
-                  <i className='icon icon-home' aria-hidden='true'></i>{' '}
-                    <p className="telephone">+49 159 013 071 69</p>
-                  </div>
-                </div>
+                </div>    
+
+
+
+            
+              <div>
+                <i className='icon icon-home' aria-hidden='true'></i>
+                <a className="telephone">+49 159 013 071 69</a>
               </div>
+
+          </div>
+          
+          
             </div>
           </div>
         </div>
+
+
+
+
+
+
+
       </section>
     </div>
   );

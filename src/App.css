@@ -6592,8 +6592,10 @@ tr {
   top: -30px;
   left: 0;
 }
-.telephone {
-  position: relative;
+.card-logo {
+  margin-top: 19px;
+  width: 38px;
+  margin-right: 18px;
 }
 /* @media (max-width: 576px) {
   .thumbnail {

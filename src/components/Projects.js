@@ -14,7 +14,8 @@ const Projects = () => {
 
           <div className="container-fluid pt-5 mt-5">
             <div className="row justify-content-around">
-              <div className="thumbnail col-12 col-sm-5 col-md-2 mb-5">
+              
+              <div className="thumbnail col-sm-5 col-md-3 mb-5">
                   <a 
                     href='https://www.google.com'
                     target='_blank'
@@ -22,9 +23,11 @@ const Projects = () => {
                 
                   <img src="images/images.png" alt="Projects" className="img-fluid" />
                   </a>
-                  <p className="text-center pt-3">project one</p>
+              <p className="text-center mt-5">project one</p>
                 </div>
-              <div className="thumbnail col-12 col-sm-5 col-md-2 mb-5">
+
+
+              <div className="thumbnail col-sm-5 col-md-3 mb-5">
                   <a 
                     href='https://www.google.com'
                     target='_blank'
@@ -32,17 +35,22 @@ const Projects = () => {
                 
                   <img src="images/images.png" alt="Projects" className="img-fluid" />
                   </a>
-                <p className="text-center pt-3">project two</p>
+                <p className="text-center mt-5">project two</p>
                 </div>
-              <div className="thumbnail col-12 col-sm-5 col-md-2 mb-5">
+
+
+              <div className="thumbnail col-sm-5 col-md-3 mb-5">
                   <a 
                     href='https://www.google.com'
                     target='_blank'
                     rel='noopener noreferrer'>
                   <img src="images/images.png" alt="Projects" className="img-fluid" />
                   </a>
-                <p className="text-center pt-3">project three</p>
+              <p className="text-center mt-5">project three</p>
                 </div>
+
+
+
             </div>
         </div>
       </section>
