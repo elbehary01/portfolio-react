@@ -10,8 +10,7 @@ const Contact = () => {
           <div className='col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center'>
             <p className='pt-0'>
               aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt.
+              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede.
             </p>
             <p>
               <a href='mailto:ahmedelbehary0@gmail.com?subject=Contact%20Form'>
@@ -61,7 +60,9 @@ const Contact = () => {
             
               <div>
                 <i className='icon icon-home' aria-hidden='true'></i>
-                <a className="telephone">+49 159 013 071 69</a>
+                  <a className="telephone" href='https://www.linkedin.com/in/ahmed-elbehary/'
+                    target='_blank'
+                    rel='noopener noreferrer'>+49 159 013 071 69</a>
               </div>
 
           </div>
