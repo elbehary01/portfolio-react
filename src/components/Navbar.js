@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Logo from './Logo';
 
 
 const Navigation = () => {
@@ -26,7 +27,7 @@ const Navigation = () => {
       >
         <div className='container'>
           <a id='header-signature' href='https://elbehary.com'>
-            A.E.
+            <Logo />
           </a>
           <button
             className='navbar-toggler'
