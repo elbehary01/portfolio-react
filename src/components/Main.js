@@ -67,24 +67,14 @@ export default function Main() {
             <h2>About me</h2>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
-              vel
+              I'm 32 years old from Egypt and I am living in Berlin since 2014. I am 31
+              years old. Out of interest I started learning programming by
+              myself. I liked it very much,
             </p>
             <p>
-              aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-            </p>
-            <p>
-              imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-              ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,
-              tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-              adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
-              luctus.
+              so I decided to join a one year intensive course to learn from
+              good teachers and in a more structured way. Besides that, learning
+              in a team, sharing ideas and having fun is a big plus for me.
             </p>
           </div>
         </div>

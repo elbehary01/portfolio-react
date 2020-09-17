@@ -8,8 +8,9 @@ const Services = () => {
           <h2 className='text-center'>My Service</h2>
           <div className='row my-5 mb-md-6'>
             <div className='col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center'>
-              aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum
+              The best way to learn and to grow is by getting out of your
+              comfort zone. And this is what getting out of my comfort zone gave
+              me:
             </div>
           </div>
           <div className='services row'>
@@ -28,7 +29,7 @@ const Services = () => {
             </div>
             <div className='col-12 col-md-6 col-lg-3'>
               <div className='service'>
-                <i className='icon icon-browser-layout service-icon'></i>
+                <i className='icon icon-fast service-icon'></i>
                 <div className='service-name'>Fast</div>
                 <div className='service-description'>
                   <p>
@@ -42,7 +43,7 @@ const Services = () => {
             <div className='col-12 col-md-6 col-lg-3'>
               <div className='service'>
                 <i
-                  className='icon icon-browser-layout service-icon'
+                  className='icon icon-dynamic service-icon'
                   aria-hidden='true'
                 ></i>
                 <div className='service-name'>Dynamic</div>
@@ -54,7 +55,7 @@ const Services = () => {
             </div>
             <div className='col-12 col-md-6 col-lg-3'>
               <div className='service'>
-                <i className='icon icon-browser-layout service-icon'></i>
+                <i className='icon icon-social service-icon'></i>
                 <div className='service-name'>Social</div>
                 <div className='service-description'>
                   <p>I am an active guy and I like to work together</p>
