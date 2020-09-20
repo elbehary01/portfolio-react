@@ -67,8 +67,7 @@ export default function Main() {
             <h2>About me</h2>
 
             <p>
-              I'm 32 years old and I am living in Berlin since 2016. Out of interest I started learning programming by
-              myself. I liked it very much,
+              I'm 32 years old and I am living in Berlin since 2016. Out of interest I started learning programming by myself. I liked it very much,
             </p>
             <p>
               so I decided to join a one year intensive course to learn from
