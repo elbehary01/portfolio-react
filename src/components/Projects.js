@@ -18,12 +18,12 @@ const Projects = () => {
                 rel='noopener noreferrer'
               >
                 <img
-                  src='images/dasinvestment.png'
+                  src='images/dasinvestment.jpg'
                   alt='Projects'
                   className='img-fluid'
                 />
               </a>
-              <p className='text-center mt-5'>project one</p>
+              <p className='text-center mt-5'>dasinvestment</p>
             </div>
 
             <div className='thumbnail col-sm-5 col-md-3 mb-5'>
@@ -38,22 +38,22 @@ const Projects = () => {
                   className='img-fluid'
                 />
               </a>
-              <p className='text-center mt-5'>project two</p>
+              <p className='text-center mt-5'>DCI</p>
             </div>
 
             <div className='thumbnail col-sm-5 col-md-3 mb-5'>
               <a
-                href='https://www.google.com'
+                href='https://taqreery.com/'
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 <img
-                  src='images/images.png'
+                  src='images/taqreery.jpg'
                   alt='Projects'
                   className='img-fluid'
                 />
               </a>
-              <p className='text-center mt-5'>project three</p>
+              <p className='text-center mt-5'>taqreery</p>
             </div>
           </div>
         </div>
