@@ -28,12 +28,12 @@ const Projects = () => {
 
             <div className='thumbnail col-sm-5 col-md-3 mb-5'>
               <a
-                href='https://www.google.com'
+                href='https://digitalcareerinstitute.org/'
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 <img
-                  src='images/images.png'
+                  src='images/DCI.jpg'
                   alt='Projects'
                   className='img-fluid'
                 />
