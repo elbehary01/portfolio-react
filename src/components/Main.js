@@ -15,7 +15,7 @@ export default function Main() {
             <div className='col-12 d-md-flex flex-column justify-content-center'>
               <div id='first-view-title'>
                 <div id='first-view-this-is'>Hi this is</div>
-                <div id='first-view-name'>Ahmed El-behary</div>
+                <div id='first-view-name'>Ahmed Elbehary</div>
                 <div id='first-view-passion'>Web Developer</div>
               </div>
             </div>
