@@ -27,7 +27,7 @@ const Contact = () => {
             <div className='contact-card card'>
               <h4>Get in Touch</h4>
 
-              <div className='col-12 pl-5'>
+              <div className='col-12 p-1 ml-2'>
                 <div className=''>
                   <i className='icon icon-linkedin' aria-hidden='true'></i>
                   <a

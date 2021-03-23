@@ -28,7 +28,7 @@ const Projects = () => {
 
             <div className='thumbnail col-sm-5 col-md-3 mb-5'>
               <a
-                href='https://digitalcareerinstitute.org/'
+                href='https://digitalcareerinstitute.org/contact'
                 target='_blank'
                 rel='noopener noreferrer'
               >
