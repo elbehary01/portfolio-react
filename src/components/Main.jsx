@@ -1,10 +1,9 @@
 import React from 'react';
-import myImage from './me-blackaNwhite.png';
-import hacker from './hacker-mind.svg';
+import myImage from '/images/me-blackaNwhite.png';
+import hacker from '/images/hacker-mind.svg';
 import Services from './Services';
 import Projects from './Projects';
 import Contact from './Contact';
-
 
 export default function Main() {
   return (
@@ -67,12 +66,15 @@ export default function Main() {
             <h2>About me</h2>
 
             <p>
-              I'm 32 years old and I am living in Berlin since 2016. Out of interest I started learning programming by myself. I liked it very much,
+              I'm 34 years old and I am living in Berlin since 2016.
+              Out of interest I started learning programming by
+              myself. I liked it very much,
             </p>
             <p>
-              so I decided to join a one year intensive course to learn from
-              good teachers and in a more structured way. Besides that, learning
-              in a team, sharing ideas and having fun is a big plus for me.
+              so I decided to join a one year intensive course to
+              learn from good teachers and in a more structured way.
+              Besides that, learning in a team, sharing ideas and
+              having fun is a big plus for me.
             </p>
           </div>
         </div>
