@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -548,7 +551,7 @@ template {
 }
 
 .no-gutters > .col,
-.no-gutters > [class*='col-'] {
+.no-gutters > [className*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
