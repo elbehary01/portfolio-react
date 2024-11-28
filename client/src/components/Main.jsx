@@ -1,11 +1,26 @@
-import React from 'react';
-import myImage from '/images/me-blackaNwhite.png';
-import hacker from '/images/hacker-mind.svg';
+import React, { useState } from 'react';
+import { assets } from '../assets/assets';
 import Services from './Services';
 import Projects from './Projects';
 import Contact from './Contact';
 
 export default function Main() {
+  const [birthDate, setBirthDate] = useState('1988-11-13');
+
+  const calculateAge = (birthDate) => {
+    const today = new Date();
+    const birth = new Date(birthDate);
+    let age = today.getFullYear() - birth.getFullYear();
+    const monthDifference = today.getMonth() - birth.getMonth();
+    if (
+      monthDifference < 0 ||
+      (monthDifference === 0 && today.getDate() < birth.getDate())
+    ) {
+      age--;
+    }
+    return age;
+  };
+
   return (
     <main id="main">
       <section id="first-view" className="bg-light">
@@ -13,7 +28,7 @@ export default function Main() {
           <div className="row h-100">
             <div className="col-12 d-md-flex flex-column justify-content-center">
               <div id="first-view-title">
-                <div id="first-view-this-is">Hi this is</div>
+                <div id="first-view-this-is">Hi here is</div>
                 <div id="first-view-name">Ahmed Elbehary</div>
                 <div id="first-view-passion">Web Developer</div>
               </div>
@@ -21,24 +36,8 @@ export default function Main() {
 
             <div id="first-view-picture">
               <picture>
-                {/* <source
-                  srcSet='images/me-blackaNwhite.png'
-                  media='(min-width: 1200px)'
-                />
-                <source
-                  srcSet='/public/images/me-blackaNwhite.png'
-                  media='(min-width: 992px)'
-                />
-                <source
-                  srcSet='/public/images/me-blackaNwhite.png'
-                  media='(min-width: 768px)'
-                />
-                <source
-                  srcSet='/public/images/me-blackaNwhite.png'
-                  media='(min-width: 1px)'
-                /> */}
                 <img
-                  src={myImage}
+                  src={assets.meBlackAndWhite}
                   className="img-fluid"
                   alt=""
                   width="529"
@@ -54,7 +53,7 @@ export default function Main() {
         <div className="row">
           <div className="col-12 col-md-4 col-lg-5 d-none d-lg-block">
             <img
-              src={hacker}
+              src={assets.hackerMind}
               alt=""
               className="img-fluid"
               loading="lazy"
@@ -66,14 +65,16 @@ export default function Main() {
             <h2>About me</h2>
 
             <p>
-              I'm 34 years old and I am living in Berlin since 2016. Out of
-              interest I started learning programming by myself. I liked it very
-              much,
-            </p>
-            <p>
-              so I decided to join a one year intensive course to learn from
-              good teachers and in a more structured way. Besides that, learning
-              in a team, sharing ideas and having fun is a big plus for me.
+              I'm {calculateAge(birthDate)} years old and have been living in
+              Berlin since 2016. Initially, I began exploring programming
+              independently out of curiosity. I quickly discovered a strong
+              passion for it, which led me to enroll in a one-year intensive
+              training program to deepen my knowledge in a structured and guided
+              manner. During this time, I gained valuable skills while
+              collaborating with peers and sharing ideas, which further
+              reinforced my commitment to the field. Following the program, I
+              transitioned into a professional role as an IT developer, where I
+              could apply and expand my expertise in real-world projects.
             </p>
           </div>
         </div>

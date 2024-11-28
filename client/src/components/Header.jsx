@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Navigation from './Navigation';
 
 function Header() {
   return (
     <div id="home" className="header">
-      <Navbar />
+      <Navigation />
     </div>
   );
 }

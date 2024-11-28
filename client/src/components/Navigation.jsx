@@ -39,7 +39,7 @@ const Navigation = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="main-navigation">
+          <div className="navbar-collapse" id="main-navigation">
             <ul className="navbar-nav nav ml-auto">
               <li className="nav-item">
                 <a href="#home" className="nav-link active">
@@ -58,12 +58,12 @@ const Navigation = () => {
               </li>
               <li className="nav-item">
                 <a href="#experience" className="nav-link">
-                  Experience
+                  Projects
                 </a>
               </li>
               <li className="nav-item">
                 <a href="#contact" className="nav-link">
-                  Contact
+                  Hire Me
                 </a>
               </li>
             </ul>
