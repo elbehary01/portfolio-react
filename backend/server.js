@@ -3,7 +3,7 @@ import cors from 'cors';
 import 'dotenv/config';
 import connectDB from './src/config/mongodb.js';
 
-import messageRoute from './src/routes/messageRoute.js';
+import contactRoute from './src/routes/contactRoute.js';
 
 // App Config
 const app = express();
@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.get('/', (req, res) => {
   res.send('API Working');
 });
-app.use('/api/message', messageRoute);
+app.use('/api/contact', contactRoute);
 
 app.listen(port, () => {
   console.log('Server started on PORT: ' + port);

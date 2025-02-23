@@ -1,13 +1,13 @@
 import mongoose from 'mongoose';
 
-const messageSchema = new mongoose.Schema({
+const contactSchema = new mongoose.Schema({
   name: { type: String, required: true },
   message: { type: String, required: true },
   email: { type: String, required: true },
   date: { type: Number, required: true },
 });
 
-const messageModel =
-  mongoose.model.message || mongoose.model('message', messageSchema);
+const contactModel =
+  mongoose.model.message || mongoose.model('contact', contactSchema);
 
-export default messageModel;
+export default contactModel;

@@ -1,4 +1,4 @@
-import messageModel from '../models/messageModel.js';
+import contactModel from '../models/contactModel.js';
 
 const visitorMessage = async (req, res) => {
   try {
@@ -9,7 +9,7 @@ const visitorMessage = async (req, res) => {
       message,
       date: Date.now(),
     };
-    const visitorData = new messageModel(messageData);
+    const visitorData = new contactModel(messageData);
     await visitorData.save();
     res.json({
       success: true,

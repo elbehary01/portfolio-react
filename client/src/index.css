@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Font Style */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #1f2937;
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .bg-gradient-animated {
+    background: linear-gradient(120deg, #2563eb, #3b82f6, #60a5fa);
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-blue-700;
+  }
+
+  .card-hover {
+    @apply shadow-lg transition transform hover:scale-105 hover:shadow-xl;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes dots {
+  0% {
+    content: '...';
+  }
+  33% {
+    content: '..';
+  }
+  66% {
+    content: '.';
+  }
+  100% {
+    content: '...';
+  }
+}
+
+.animate-ellipsis::after {
+  display: inline-block;
+  animation: dots 1s steps(3, end) infinite;
+  content: '...';
+}
+.hexagon {
+  position: relative;
+  background: linear-gradient(to left, DarkBlue, DodgerBlue);
+  border-radius: 10px;
+  width: 100px;
+  height: 63px;
+  box-sizing: border-box;
+}
+
+/* Creating pseudo-elements to form a hexagon */
+.hexagon:before,
+.hexagon:after {
+  content: '';
+  position: absolute;
+  background: inherit;
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+}
+
+.hexagon:before {
+  transform: rotate(60deg);
+}
+
+.hexagon:after {
+  transform: rotate(-60deg);
+}
+.transform-origin-center {
+  transform-origin: center;
+}
+
+.hover\:animation-none:hover {
+  animation: none;
+}
