@@ -33,7 +33,7 @@ const Navbar = () => {
     'Services',
     'Skills',
     'Projects',
-    'Contact',
+    'Hire Me',
   ];
 
   return (

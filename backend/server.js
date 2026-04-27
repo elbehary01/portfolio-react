@@ -25,7 +25,7 @@ app.use('/api/contact', contactRoute);
 // Serve frontend
 if (process.env.NODE_ENV === 'development') {
   app.use(express.static(path.join(__dirname, '../client/public')));
-  console.log(process.env.NODE_ENV);
+  // console.log(process.env.NODE_ENV);
 
   app.get('/', (req, res) =>
     res.sendFile(

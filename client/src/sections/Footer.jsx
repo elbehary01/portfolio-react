@@ -47,7 +47,7 @@ const Footer = () => {
                 { label: 'About', id: 'about' },
                 { label: 'Services', id: 'services' },
                 { label: 'Projects', id: 'projects' },
-                { label: 'Contact', id: 'contact' },
+                { label: 'Hire Me', id: 'contact' },
               ].map(({ label, id }) => (
                 <li key={label}>
                   <button
@@ -83,7 +83,7 @@ const Footer = () => {
 
           {/* Download Profile */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-gray-900 dark:text-white">CV for more info</h3>
+            <h3 className="text-xl font-bold mb-6 text-gray-900 dark:text-white">CV for Technical Information</h3>
             <button
               onClick={handleDownloadPDF}
               className="group relative px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300 overflow-hidden"

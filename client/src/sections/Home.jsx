@@ -40,7 +40,7 @@ const Home = () => {
               onClick={() => scrollToSection('projects')}
               className="px-8 py-4 text-lg font-semibold text-purple-600 dark:text-purple-400 bg-white dark:bg-gray-800 border-2 border-purple-600 dark:border-purple-400 rounded-xl shadow-lg hover:shadow-2xl hover:bg-purple-50 dark:hover:bg-gray-700 transform hover:scale-105 transition-all duration-300"
             >
-              View
+              Work
             </button>
           </div>
         </div>

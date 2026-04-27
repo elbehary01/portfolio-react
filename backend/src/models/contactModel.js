@@ -11,5 +11,3 @@ const contactModel =
   mongoose.model.message || mongoose.model('contact', contactSchema);
 
 export default contactModel;
-
-// mongodb+srv://elbehary01:oSman415@cluster0.z8moc.mongodb.net/contact?retryWrites=true&w=majority&appName=Cluster0

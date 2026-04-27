@@ -19,6 +19,7 @@ import nginx from './images/nginx-logo.png';
 import dasInvestment from './images/dasInvestment.png';
 import tandaLiteStore from './images/tandaLiteStore.png';
 import cinimax from './images/cinimax.png';
+import futuremuscles from './images/futuremuscles.png';
 
 export const assets = {
   meBlackAndWhite,
@@ -42,4 +43,5 @@ export const assets = {
   dasInvestment,
   tandaLiteStore,
   cinimax,
+  futuremuscles,
 };
