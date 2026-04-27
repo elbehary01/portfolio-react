@@ -1,4 +1,5 @@
 import contactModel from '../models/contactModel.js';
+import { sendVisitorThankYouEmail, sendNotificationEmail } from '../config/email.js';
 
 const visitorMessage = async (req, res) => {
   try {
@@ -11,6 +12,13 @@ const visitorMessage = async (req, res) => {
     };
     const visitorData = new contactModel(messageData);
     await visitorData.save();
+
+    // Send thank you email to visitor
+    await sendVisitorThankYouEmail(name, email);
+
+    // Send notification email to admin
+    await sendNotificationEmail(name, email, message);
+
     res.json({
       success: true,
       message: 'Thanks for your message, I will get back soon to you...',
