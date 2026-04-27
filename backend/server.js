@@ -33,7 +33,7 @@ if (process.env.NODE_ENV === 'development') {
     )
   );
 } else {
-  app.get('/', (req, res) => res.send('Please set to development mode'));
+  app.get('/', (req, res) => res.send('API is running...'));
 }
 
 app.listen(port, () => {
