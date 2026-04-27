@@ -15,7 +15,7 @@ fi
 
 echo ""
 echo "================================================="
-echo "  Deploying Protfolio"
+echo "  Deploying Portfolio"
 echo "================================================="
 echo ""
 
@@ -32,12 +32,6 @@ npm install --omit=dev
 # ── 3. Build client ───────────────────────────────────────────
 echo "[3/5] Building client (storefront)..."
 cd "$APP_DIR/client"
-npm install
-npm run build
-
-# ── 4. Build admin-client ─────────────────────────────────────
-echo "[4/5] Building admin-client..."
-cd "$APP_DIR/admin-client"
 npm install
 npm run build
 
