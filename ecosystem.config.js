@@ -3,7 +3,7 @@ module.exports = {
     {
       name: 'backend',
       script: 'server.js',
-      cwd: '/home/ubuntu/eCommerce--Market-app/backend',
+      cwd: '/home/ubuntu/portfolio/backend',
       instances: 1,
       exec_mode: 'fork',
       watch: false,
