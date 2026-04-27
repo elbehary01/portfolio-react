@@ -22,7 +22,7 @@ echo ""
 # ── 1. Pull latest code ───────────────────────────────────────
 echo "[1/5] Pulling latest code from git..."
 cd "$APP_DIR"
-git pull origin main
+git pull origin master
 
 # ── 2. Install & build backend ────────────────────────────────
 echo "[2/5] Installing backend dependencies..."
