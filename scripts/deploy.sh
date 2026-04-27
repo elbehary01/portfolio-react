@@ -41,7 +41,8 @@ cd "$APP_DIR"
 
 if $FIRST_RUN; then
   pm2 start ecosystem.config.js --env production
-  pm2 startup          # generates the systemd command — copy & run the output
+  cd "$APP_DIR/backend"
+  pm2 start server.js          # generates the systemd command — copy & run the output
   pm2 save
 else
   pm2 reload ecosystem.config.js --env production
