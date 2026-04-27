@@ -16,6 +16,9 @@ import nodeJS from './images/nodeJS-logo.png';
 import docker from './images/docker-logo.png';
 import python from './images/python-logo.png';
 import nginx from './images/nginx-logo.png';
+import dasInvestment from './images/dasInvestment.png';
+import tandaLiteStore from './images/tandaLiteStore.png';
+import cinimax from './images/cinimax.png';
 
 export const assets = {
   meBlackAndWhite,
@@ -36,4 +39,7 @@ export const assets = {
   python,
   react,
   docker,
+  dasInvestment,
+  tandaLiteStore,
+  cinimax,
 };

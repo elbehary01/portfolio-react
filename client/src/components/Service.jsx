@@ -1,22 +1,26 @@
-import React from 'react';
 
 const Service = ({ image, title, text1, text2 }) => {
   return (
-    <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg shadow-lg p-6 sm:p-8 lg:p-10 text-center text-gray-900 transition-transform transform hover:-translate-y-3 hover:shadow-2xl hover:scale-105 duration-300 ease-in-out">
-      <div className="flex justify-center items-center w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto mb-6 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 shadow-md">
-        <img
-          src={image}
-          alt={title}
-          className="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-contain"
-        />
+    <div className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 text-center border border-gray-100 dark:border-gray-700 transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl hover:border-purple-300 dark:hover:border-purple-600 overflow-hidden">
+      {/* Gradient overlay on hover */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-blue-500/5 dark:from-purple-500/10 dark:to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+      <div className="relative z-10">
+        <div className="flex justify-center items-center w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-purple-500 to-blue-600 shadow-lg group-hover:shadow-purple-500/50 transition-shadow duration-300 group-hover:scale-110 transform">
+          <img
+            src={image}
+            alt={title}
+            className="w-12 h-12 object-contain filter brightness-0 invert"
+          />
+        </div>
+        <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+          {title}
+        </h3>
+        <p className="text-base text-gray-600 dark:text-gray-300 mb-3">{text1}</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400 font-medium px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg inline-block">
+          {text2}
+        </p>
       </div>
-      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-4">
-        {title}
-      </h3>
-      <p className="text-sm sm:text-base lg:text-lg text-gray-700">{text1}</p>
-      <p className="text-xs sm:text-sm lg:text-base text-gray-500 mt-4">
-        {text2}
-      </p>
     </div>
   );
 };

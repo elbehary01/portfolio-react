@@ -1,6 +1,5 @@
-import React from 'react';
-import Skill from '../components/Skill';
 import { assets } from '../assets/assets';
+import Skill from '../components/Skill';
 
 const Skills = () => {
   const skillsData = [
@@ -17,25 +16,31 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-10 bg-gradient-to-r from-blue-50 via-gray-100 to-blue-50"
+      className="py-20 bg-white dark:bg-gray-900 relative overflow-hidden"
     >
-      <div className="container mx-auto px-4">
-        <h2 className="text-center text-4xl font-bold mb-6 text-gray-800">
-          Skills
-        </h2>
-        <p className="text-center max-w-2xl mx-auto mb-12 text-gray-600">
-          Here are the technologies I work with, each polished like a diamond,
-          representing my journey and expertise.
-        </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-12 justify-items-center items-center">
-          {skillsData.map((skill) => (
-            <Skill
-              key={skill.name}
-              name={skill.name}
-              value={skill.value}
-              image={skill.image}
-              color={skill.color}
-            />
+      {/* Background decoration */}
+      <div className="absolute top-20 left-0 w-96 h-96 bg-blue-300 dark:bg-blue-600 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl opacity-20 animate-[float_7s_ease-in-out_infinite]"></div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-16 animate-[fadeInUp_1s_ease-out]">
+          <h2 className="text-5xl md:text-6xl font-black mb-4 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent">
+            Skills
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full mb-6"></div>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            A diverse skill set that combines technical expertise with creative problem-solving. From front-end development to back-end technologies, I have the tools and knowledge to bring your ideas to life.
+          </p>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12 justify-items-center items-center">
+          {skillsData.map((skill, index) => (
+            <div key={skill.name} className="animate-[fadeInUp_1s_ease-out]" style={{ animationDelay: `${index * 0.05}s` }}>
+              <Skill
+                name={skill.name}
+                value={skill.value}
+                image={skill.image}
+                color={skill.color}
+              />
+            </div>
           ))}
         </div>
       </div>

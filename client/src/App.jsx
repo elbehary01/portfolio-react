@@ -1,21 +1,17 @@
-import React, { useContext } from 'react';
-import classNames from 'classnames';
 import Navbar from './components/Navbar';
-import Home from './sections/Home';
 import AboutMe from './sections/AboutMe';
+import Home from './sections/Home';
 import Services from './sections/Services';
 import Skills from './sections/Skills.jsx';
 
-import Projects from './sections/Projects';
+import { PortfolioContext } from './context/PortfolioContext.jsx';
 import ContactMe from './sections/ContactMe';
 import Footer from './sections/Footer';
-import { PortfolioContext } from './context/PortfolioContext.jsx';
+import Projects from './sections/Projects';
 
 function App() {
-  const { theme } = useContext(PortfolioContext);
-
   return (
-    <div className={classNames('App', { [theme]: true })}>
+    <div className="App min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       <Navbar />
       <Home />
       <AboutMe />
