@@ -6,7 +6,7 @@
 # =============================================================
 set -e
 
-APP_DIR="/home/ubuntu/eCommerce--Market-app"
+APP_DIR="/home/ubuntu/prtfolio"
 FIRST_RUN=false
 
 if [[ "$1" == "--first-run" ]]; then
@@ -15,7 +15,7 @@ fi
 
 echo ""
 echo "================================================="
-echo "  Deploying ecommerce-app"
+echo "  Deploying Protfolio"
 echo "================================================="
 echo ""
 
