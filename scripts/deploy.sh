@@ -6,7 +6,7 @@
 # =============================================================
 set -e
 
-APP_DIR="/home/ubuntu/prtfolio"
+APP_DIR="/home/ubuntu/portfolio"
 FIRST_RUN=false
 
 if [[ "$1" == "--first-run" ]]; then
