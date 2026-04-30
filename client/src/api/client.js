@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = `${import.meta.env.VITE_BACKEND_URL}/api/contact/message`;
+// Use relative path to call API from same domain
+const API_URL = `/api/contact/message`;
 
 export const sendContactForm = async (formData) => {
 
