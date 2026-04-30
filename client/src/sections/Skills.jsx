@@ -16,22 +16,31 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-20 bg-white dark:bg-gray-900 relative overflow-hidden"
+      className="py-20 md:py-28 bg-white dark:bg-gray-900 relative overflow-hidden"
     >
       {/* Background decoration */}
-      <div className="absolute top-20 left-0 w-96 h-96 bg-blue-300 dark:bg-blue-600 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl opacity-20 animate-[float_7s_ease-in-out_infinite]"></div>
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-purple-300 dark:bg-purple-600 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl opacity-20 animate-[float_6s_ease-in-out_infinite]"></div>
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-300 dark:bg-blue-600 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl opacity-20 animate-[float_8s_ease-in-out_infinite]"></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16 animate-[fadeInUp_1s_ease-out]">
-          <h2 className="text-5xl md:text-6xl font-black mb-4 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent">
+        <div className="text-center mb-16 md:mb-20 animate-[fadeInUp_1s_ease-out]">
+          <div className="inline-block mb-4">
+            <span className="px-4 py-2 text-sm font-bold text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/30 rounded-full uppercase tracking-widest border border-purple-200 dark:border-purple-700">
+              Technical Stack
+            </span>
+          </div>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent">
             Skills
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full mb-6"></div>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A diverse skill set that combines technical expertise with creative problem-solving. From front-end development to back-end technologies, I have the tools and knowledge to bring your ideas to life.
+          <div className="flex gap-2 justify-center mb-8">
+            <div className="w-12 h-1 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full"></div>
+            <div className="w-12 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+          </div>
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            A diverse skill set combining technical expertise with creative problem-solving, from front-end to back-end technologies.
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12 justify-items-center items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10 justify-items-center items-center">
           {skillsData.map((skill, index) => (
             <div key={skill.name} className="animate-[fadeInUp_1s_ease-out]" style={{ animationDelay: `${index * 0.05}s` }}>
               <Skill

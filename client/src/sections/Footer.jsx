@@ -11,10 +11,10 @@ const Footer = () => {
   };
 
   return (
-    <footer id="footer" className="relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-300 pt-16 pb-8 overflow-hidden">
+    <footer id="footer" className="relative bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-300 pt-16 md:pt-20 pb-8 overflow-hidden border-t border-gray-100 dark:border-gray-800">
       {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-purple-600 rounded-full mix-blend-soft-light filter blur-3xl opacity-5 dark:opacity-10 animate-[float_8s_ease-in-out_infinite]"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600 rounded-full mix-blend-soft-light filter blur-3xl opacity-5 dark:opacity-10 animate-[float_6s_ease-in-out_infinite]"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-purple-300 dark:bg-purple-600 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl opacity-20 animate-[float_8s_ease-in-out_infinite]\"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-300 dark:bg-blue-600 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl opacity-20 animate-[float_6s_ease-in-out_infinite]\"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">

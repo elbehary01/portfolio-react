@@ -28,27 +28,34 @@ const ContactMe = () => {
   return (
     <section
       id="contact"
-      className="py-20 px-4 bg-white dark:bg-gray-900 relative overflow-hidden"
+      className="py-20 md:py-28 px-4 bg-white dark:bg-gray-900 relative overflow-hidden"
     >
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-purple-300 dark:bg-purple-600 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl opacity-20 animate-[float_8s_ease-in-out_infinite]"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-300 dark:bg-blue-600 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl opacity-20 animate-[float_6s_ease-in-out_infinite]"></div>
+      <div className="absolute top-0 left-1/3 w-96 h-96 bg-purple-300 dark:bg-purple-600 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl opacity-20 animate-[float_6s_ease-in-out_infinite]"></div>
+      <div className="absolute bottom-0 right-1/3 w-96 h-96 bg-blue-300 dark:bg-blue-600 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-3xl opacity-20 animate-[float_8s_ease-in-out_infinite]"></div>
 
-      <div className="container mx-auto max-w-4xl relative z-10">
-        <div className="text-center mb-16 animate-[fadeInUp_1s_ease-out]">
-          <h2 className="text-5xl md:text-6xl font-black mb-4 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent">
+      <div className="container mx-auto max-w-5xl relative z-10">
+        <div className="text-center mb-16 md:mb-20 animate-[fadeInUp_1s_ease-out]">
+          <div className="inline-block mb-4">
+            <span className="px-4 py-2 text-sm font-bold text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/30 rounded-full uppercase tracking-widest border border-purple-200 dark:border-purple-700">
+              Contact
+            </span>
+          </div>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent">
             Hire Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full mb-6"></div>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            I'd love to hear from you! Fill out the form below, and I'll get back
-            to you as soon as possible.
+          <div className="flex gap-2 justify-center mb-8">
+            <div className="w-12 h-1 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full"></div>
+            <div className="w-12 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+          </div>
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            I'd love to hear from you! Fill out the form below, and I'll get back to you as soon as possible.
           </p>
         </div>
 
         <form
           onSubmit={handleSubmit}
-          className="bg-white dark:bg-gray-800 shadow-2xl rounded-2xl p-8 md:p-12 space-y-6 border border-gray-100 dark:border-gray-700 animate-[fadeInUp_1s_ease-out] hover:shadow-3xl transition-shadow duration-300"
+          className="bg-white dark:bg-gray-800 shadow-2xl dark:shadow-2xl rounded-2xl md:rounded-3xl p-8 md:p-12 lg:p-16 space-y-6 md:space-y-8 border border-gray-100 dark:border-gray-700 animate-[fadeInUp_1s_ease-out] hover:shadow-3xl dark:hover:shadow-purple-500/10 transition-all duration-300"
         >
           <div>
             <label
@@ -111,7 +118,7 @@ const ContactMe = () => {
           </div>
           <button
             type="submit"
-            className="group relative w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-4 px-8 rounded-xl hover:from-purple-700 hover:to-blue-700 focus:outline-none focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-500 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-2xl overflow-hidden"
+            className="group relative w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg sm:rounded-xl hover:from-purple-700 hover:to-blue-700 focus:outline-none focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-500 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-2xl overflow-hidden text-sm sm:text-base\"
             disabled={loading}
           >
             <span className="relative z-10 flex items-center justify-center space-x-2">

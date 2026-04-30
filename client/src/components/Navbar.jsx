@@ -19,11 +19,11 @@ const Navbar = () => {
   const { theme, toggleTheme } = useContext(PortfolioContext);
 
   useEffect(() => {
-    console.log('Navbar: theme changed to', theme);
+    // console.log('Navbar: theme changed to', theme);
   }, [theme]);
 
   const handleThemeToggle = () => {
-    console.log('Theme toggle button clicked');
+    // console.log('Theme toggle button clicked');
     toggleTheme();
   };
 
@@ -72,20 +72,20 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-3">
           {/* <button
             onClick={handleThemeToggle}
-            className="group relative p-3 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 overflow-hidden"
+            className="group relative p-2.5 sm:p-3 bg-gray-100 dark:bg-gray-800 rounded-lg sm:rounded-xl shadow-md dark:shadow-lg hover:shadow-lg dark:hover:shadow-xl transition-all duration-300 transform hover:scale-110 overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-purple-400 dark:hover:border-purple-500"
             aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
-            <span className="relative text-2xl">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-15 transition-opacity duration-300"></div>
+            <span className="relative text-xl sm:text-2xl inline-block transition-transform duration-300" style={theme === 'light' ? { transform: 'rotate(0deg)' } : { transform: 'rotate(180deg)' }}>
               {theme === 'light' ? '🌙' : '☀️'}
             </span>
           </button> */}
 
           <button
-            className="md:hidden p-3 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-md transition-all duration-300 transform hover:scale-110"
+            className="md:hidden p-3 bg-gray-100 dark:bg-gray-800 rounded-lg sm:rounded-xl shadow-md dark:shadow-lg transition-all duration-300 transform hover:scale-110"
             onClick={() => setIsMenuOpen((prev) => !prev)}
             aria-label="Toggle menu"
           >

@@ -45,6 +45,32 @@ body {
   .glass-effect {
     @apply bg-white/10 dark:bg-gray-800/10 backdrop-blur-lg border border-white/20 dark:border-gray-700/20;
   }
+
+  /* Enhanced dark theme utilities */
+  .dark-shadow {
+    @apply shadow-lg dark:shadow-2xl;
+  }
+
+  .dark-border {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+
+  .dark-text {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+
+  .dark-bg-card {
+    @apply bg-white dark:bg-gray-800;
+  }
+
+  .dark-bg-subtle {
+    @apply bg-gray-50 dark:bg-gray-900;
+  }
+
+  /* Responsive button utilities */
+  .btn-responsive {
+    @apply px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg;
+  }
 }
 
 @keyframes gradientShift {

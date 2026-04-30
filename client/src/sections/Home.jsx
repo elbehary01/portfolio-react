@@ -28,17 +28,17 @@ const Home = () => {
           <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mt-4 max-w-2xl">
             Powering AI to build beautiful websites with precision and modern technology..
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-8">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start mt-8 w-full sm:w-auto">
             <button
               onClick={() => scrollToSection('contact')}
-              className="group relative px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 overflow-hidden"
+              className="group relative px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg sm:rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 overflow-hidden"
             >
               <span className="relative z-10">Hire Me</span>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-blue-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
             </button>
             <button
               onClick={() => scrollToSection('projects')}
-              className="px-8 py-4 text-lg font-semibold text-purple-600 dark:text-purple-400 bg-white dark:bg-gray-800 border-2 border-purple-600 dark:border-purple-400 rounded-xl shadow-lg hover:shadow-2xl hover:bg-purple-50 dark:hover:bg-gray-700 transform hover:scale-105 transition-all duration-300"
+              className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-purple-600 dark:text-purple-400 bg-white dark:bg-gray-800 border-2 border-purple-600 dark:border-purple-400 rounded-lg sm:rounded-xl shadow-lg hover:shadow-2xl hover:bg-purple-50 dark:hover:bg-gray-700 transform hover:scale-105 transition-all duration-300"
             >
               Work
             </button>
